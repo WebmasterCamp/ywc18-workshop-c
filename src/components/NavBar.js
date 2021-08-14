@@ -24,21 +24,23 @@ const NavBar = () => {
 
 const UserBtn = () => {
   return (
-    <Button
-      className="ml-10 flex items-center"
-      type="default"
-      size="large"
-      shape="round"
-      icon={
-        <span
-          className="bg-no-repeat bg-center bg-primary-200 bg-cover rounded-full h-8 w-8 mr-2 border-px"
-          style={{ backgroundImage: `url(${user.picture})` }}
-        />
-      }
-      onClick={() => {}}
-    >
-      {user.username}
-    </Button>
+    <Link to="/profile" className="flex items-center">
+      <Button
+        className="ml-10 flex items-center"
+        type="default"
+        size="large"
+        shape="round"
+        icon={
+          <span
+            className="bg-no-repeat bg-center bg-primary-200 bg-cover rounded-full h-8 w-8 mr-2 border-px"
+            style={{ backgroundImage: `url(${user.picture})` }}
+          />
+        }
+        onClick={() => {}}
+      >
+        {user.username}
+      </Button>
+    </Link>
   );
 };
 
