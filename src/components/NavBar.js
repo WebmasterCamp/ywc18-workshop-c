@@ -1,6 +1,6 @@
-import { default as Logo } from '../assets/svg/logo.svg';
-import { UserOutlined } from '@ant-design/icons';
-import { Button, Layout, Typography } from 'antd';
+import { default as Logo } from "../assets/svg/logo.svg";
+import { UserOutlined } from "@ant-design/icons";
+import { Button, Layout, Typography } from "antd";
 const { Header } = Layout;
 const { Link } = Typography;
 
@@ -9,7 +9,7 @@ const NavBar = () => {
     <Header className="mb-12">
       <div className="max-w-screen-xl m-auto">
         <div className="flex">
-          <img src={Logo} />
+          <img src={Logo} alt="logo" />
           <div className="ml-auto">
             <Link>เกี่ยวกับเรา</Link>
             <UserBtn />
@@ -28,7 +28,7 @@ const UserBtn = () => {
       shape="round"
       icon={<UserOutlined />}
     >
-      {' '}
+      {" "}
       teamcywc
     </Button>
   );

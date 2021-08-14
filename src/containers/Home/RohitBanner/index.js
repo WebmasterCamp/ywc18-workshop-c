@@ -7,7 +7,7 @@ const RohitBanner = () => {
       <img
         src={Banner}
         alt="banner"
-        className="rounded-2xl"
+        className="rounded-2xl cursor-pointer"
         style={{ width: "-webkit-fill-available" }}
       />
     </div>
