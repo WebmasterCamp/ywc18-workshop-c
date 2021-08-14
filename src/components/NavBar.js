@@ -9,7 +9,7 @@ const NavBar = () => {
     <Header className="mb-12">
       <div className="max-w-screen-xl m-auto">
         <div className="flex">
-          <img src={Logo} />
+          <img src={Logo} alt="logo"/>
           <div className="ml-auto">
             <Link>เกี่ยวกับเรา</Link>
             <UserBtn />
