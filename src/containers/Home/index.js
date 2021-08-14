@@ -2,20 +2,22 @@ import React from "react";
 import { Layout } from "antd";
 import BloodMacro from "./BloodMacro/BloodMacro";
 import BloodRequire from "./BloodRequire/BloodRequire";
+import NavBar from "../../components/NavBar";
 import BloodDonation from "./BloodDonation";
+import Footer from "../../components/Footer";
 
 const Home = () => {
-  const { Header, Footer, Content } = Layout;
+  const { Content } = Layout;
   return (
     <>
       <Layout>
-        <Header>is Header</Header>
+        <NavBar/>
         <Content>
           <BloodMacro />
           <BloodRequire />
           <BloodDonation />
         </Content>
-        <Footer>Footer</Footer>
+        <Footer/>
       </Layout>
     </>
   );

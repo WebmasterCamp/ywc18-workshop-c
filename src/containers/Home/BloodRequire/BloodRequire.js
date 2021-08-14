@@ -43,10 +43,10 @@ const BloodRequire = () => {
       <div className="rounded-2xl shadow-md h-auto bg-white  p-8">
         <Row>
           <Col span={8}>
-            <Title level={3}>ปริมาณเลือดที่ขาดรายวัน</Title>
+            <p className="text-base font-semibold mb-6">ปริมาณเลือดที่ขาดรายวัน</p>
           </Col>
           <Col span={8} offset={8}>
-            <Text className="float-right">ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
+            <Text className="float-right" type="secondary">ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
           </Col>
         </Row>
 
@@ -67,14 +67,14 @@ const BloodRequire = () => {
 
 const RequireCard = props => {
   const { bloodRequire } = props;
-  const { requiredUnitPerMonth, logo } = bloodRequire;
+  const { requiredUnit, logo } = bloodRequire;
   return (
     <Col className="gutter-row" span={6}>
       <Space>
         <img src={logo} alt="logo" />
         <Space direction="vertical" className="ml-5">
           <Text>ความต้องการโลหิต</Text>
-          <Title level={4}>{requiredUnitPerMonth} ยูนิต/เดือน</Title>
+          <Title level={4}>{requiredUnit} ยูนิต</Title>
         </Space>
       </Space>
     </Col>
