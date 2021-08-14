@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Layout } from 'antd';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
-import {rewardItems } from './rewardItems'
+import { rewardItems } from './rewardItems';
 
 const RewardCatalog = () => {
   const { Content } = Layout;
@@ -40,7 +40,9 @@ const Reward = props => {
           ></div>
           <div className="p-6">
             <h6 className="font-bold text-lg">{rewardName}</h6>
-            <p className="text-secondary-200 hover:text-secondary-200">{description}</p>
+            <p className="text-secondary-200 hover:text-secondary-200">
+              {description}
+            </p>
             <span className="text-primary-200">{point} คะแนน</span>
           </div>
         </div>
