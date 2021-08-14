@@ -10,7 +10,7 @@ const BloodDonation = () => {
       <div className="rounded-2xl shadow-md h-auto bg-white  p-8">
         <p className="text-base font-semibold mb-4">ค้นหาจุดบริจาค</p>
 
-        <form className="flex" method="get">
+        <form className="flex" method="get" action="/donate">
           <Select
             size="large"
             showSearch
@@ -27,7 +27,7 @@ const BloodDonation = () => {
               </Option>
             ))}
           </Select>
-          <Button type="primary" size="large">
+          <Button type="primary" size="large" htmlType="submit">
             ค้นหาจุดบริจาค
           </Button>
         </form>
