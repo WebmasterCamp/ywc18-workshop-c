@@ -26,8 +26,8 @@ const RewardCatalog = () => {
               </div>
             </div>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {rewardItems.map((reward) => {
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {rewardItems.map(reward => {
               return <Reward reward={reward} key={reward.rewardId} />;
             })}
           </div>

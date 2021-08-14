@@ -1,4 +1,4 @@
-import { Row, Col, Space, Typography } from "antd";
+import { Row, Col, Typography } from "antd";
 import { default as BloodTypeA } from "../../../assets/svg/blood-type/BloodTypeA.svg";
 import { default as BloodTypeB } from "../../../assets/svg/blood-type/BloodTypeB.svg";
 import { default as BloodTypeO } from "../../../assets/svg/blood-type/BloodTypeO.svg";
@@ -54,7 +54,7 @@ const BloodRequire = () => {
           </Col>
         </Row>
 
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {bloodRequireData.map((bloodRequire) => {
             return (
               <RequireCard
@@ -63,7 +63,7 @@ const BloodRequire = () => {
               />
             );
           })}
-        </Row>
+        </div>
       </div>
     </div>
   );
@@ -73,17 +73,15 @@ const RequireCard = (props) => {
   const { bloodRequire } = props;
   const { requiredUnit, logo } = bloodRequire;
   return (
-    <Col className="gutter-row" span={6}>
-      <Space>
-        <img src={logo} alt="logo" />
-        <Space direction="vertical" className="ml-5 font-semibold">
-          <Text>ความต้องการโลหิต</Text>
-          <span className="text-base text-lg font-semibold text-primary-200">
-            {requiredUnit} ยูนิต
-          </span>
-        </Space>
-      </Space>
-    </Col>
+    <div className="flex item-center">
+      <img src={logo} alt="logo" />
+      <div className="flex flex-col ml-5 mt-5">
+        <Text>ความต้องการโลหิต</Text>
+        <span className="text-base text-lg font-semibold text-primary-200">
+          {requiredUnit} ยูนิต
+        </span>
+      </div>
+    </div>
   );
 };
 
