@@ -43,7 +43,7 @@ const BloodRequire = () => {
       <div className="rounded-2xl shadow-md h-auto bg-white  p-8">
         <Row>
           <Col span={8}>
-            <Title level={3}>ปริมาณเลือดที่ขาดรายวัน</Title>
+            <p className="text-base font-semibold mb-6">ปริมาณเลือดที่ขาดรายวัน</p>
           </Col>
           <Col span={8} offset={8}>
             <Text className="float-right" type="secondary">ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
