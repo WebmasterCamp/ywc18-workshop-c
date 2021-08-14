@@ -1,12 +1,14 @@
 import React from "react";
 import { Layout } from "antd";
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 
 const Blog = () => {
-  const { Header, Footer, Content } = Layout;
+  const { Content } = Layout;
 
   return (
     <Layout>
-      <Header>is Header</Header>
+      <NavBar />
       <Content>
         <div className="max-w-screen-lg m-auto mt-16">
           <div className="bg-no-repeat bg-center bg-primary-200 bg-cover h-372px rounded-xl mb-16" />
@@ -31,7 +33,7 @@ const Blog = () => {
           </p>
         </div>
       </Content>
-      <Footer>Footer</Footer>
+      <Footer />
     </Layout>
   );
 };
