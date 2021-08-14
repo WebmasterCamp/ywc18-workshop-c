@@ -4,7 +4,7 @@ import { default as BloodTypeB } from "../../../assets/svg/blood-type/BloodTypeB
 import { default as BloodTypeO } from "../../../assets/svg/blood-type/BloodTypeO.svg";
 import { default as BloodTypeAB } from "../../../assets/svg/blood-type/BloodTypeAB.svg";
 
-const { Title, Text } = Typography;
+const { Text } = Typography;
 
 const bloodRequireData = [
   {
@@ -43,10 +43,14 @@ const BloodRequire = () => {
       <div className="rounded-2xl shadow-md h-auto bg-white  p-8">
         <Row>
           <Col span={8}>
-            <p className="text-base font-semibold mb-6">ปริมาณเลือดที่ขาดรายวัน</p>
+            <p className="text-base font-semibold mb-6">
+              ปริมาณเลือดที่ขาดรายวัน
+            </p>
           </Col>
           <Col span={8} offset={8}>
-            <Text className="float-right" type="secondary">ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
+            <Text className="float-right" type="secondary">
+              ข้อมูล ณ วันที่ 15 สิงหาคม 2564
+            </Text>
           </Col>
         </Row>
 
@@ -65,7 +69,7 @@ const BloodRequire = () => {
   );
 };
 
-const RequireCard = props => {
+const RequireCard = (props) => {
   const { bloodRequire } = props;
   const { requiredUnit, logo } = bloodRequire;
   return (
@@ -74,7 +78,9 @@ const RequireCard = props => {
         <img src={logo} alt="logo" />
         <Space direction="vertical" className="ml-5">
           <Text>ความต้องการโลหิต</Text>
-          <span className="text-base text-lg font-semibold text-primary-200">{requiredUnit} ยูนิต</span>
+          <span className="text-base text-lg font-semibold text-primary-200">
+            {requiredUnit} ยูนิต
+          </span>
         </Space>
       </Space>
     </Col>
