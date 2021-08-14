@@ -1,6 +1,7 @@
 import { default as Logo } from "../assets/svg/logo.svg";
-import { UserOutlined } from "@ant-design/icons";
 import { Button, Layout, Typography } from "antd";
+import { user } from "../utilities/constants";
+
 const { Header } = Layout;
 const { Link } = Typography;
 
@@ -8,9 +9,9 @@ const NavBar = () => {
   return (
     <Header className="mb-12">
       <div className="max-w-screen-xl m-auto">
-        <div className="flex">
+        <div className="flex justify-between">
           <img src={Logo} alt="logo" />
-          <div className="ml-auto">
+          <div className="flex items-center">
             <Link>เกี่ยวกับเรา</Link>
             <UserBtn />
           </div>
@@ -23,13 +24,18 @@ const NavBar = () => {
 const UserBtn = () => {
   return (
     <Button
-      className="ml-10"
-      type="primary"
+      className="ml-10 flex items-center"
+      type="default"
+      size="large"
       shape="round"
-      icon={<UserOutlined />}
+      icon={
+        <span
+          className="bg-no-repeat bg-center bg-primary-200 bg-cover rounded-full h-8 w-8 mr-2 border-px"
+          style={{ backgroundImage: `url(${user.picture})` }}
+        />
+      }
     >
-      {" "}
-      teamcywc
+      {user.username}
     </Button>
   );
 };
