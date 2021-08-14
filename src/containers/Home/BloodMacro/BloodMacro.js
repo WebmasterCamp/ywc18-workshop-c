@@ -1,5 +1,5 @@
 import React from "react";
-import { Progress } from "antd";
+// import { Progress } from "antd";
 
 const BloodMacro = () => {
   return (
@@ -14,7 +14,7 @@ const BloodMacro = () => {
         </div>
 
         <p className="text-base mb-4">เก็บเพิ่มอีก 60 คะแนนเพื่อรับ Reward</p>
-        <Progress percent={60} showInfo={false} />
+        {/* <Progress percent={60} showInfo={false} /> */}
       </div>
     </div>
   );
