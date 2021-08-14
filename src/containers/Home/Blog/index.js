@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../../../assets/blogbanner_1.png";
+import Banner from "../../../assets/blogbanner_1.jpeg";
 import Banner2 from "../../../assets/blogbanner_2.jpg";
 import { Row, Col } from "antd";
 import { Link } from "react-router-dom";
@@ -51,7 +51,7 @@ const Blog = () => {
                   ทุกคนเคยสงสัยไหมว่ากรุ๊ปเลือดสามารถบอกอะไรเราได้บ้าง?
                   ทุกคนอาจจะเคยเห็น การบอกนิสัยจากกรุ๊ปเลือด
                   การทำนายดวงจากกรุ๊ปเลือด
-                  เเล้วกรุ๊ปเลือดยังสามารถบอกอะไรเราได้อีกบ้างนะ
+                  แล้วกรุ๊ปเลือดยังสามารถบอกอะไรเราได้อีกบ้างนะ
                   มีหนังสือเล่นหนึ่ง ...
                 </p>
               </div>
