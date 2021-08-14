@@ -1,7 +1,7 @@
-import { default as Logo } from '../assets/svg/logo.svg';
-import { Button, Layout, Col, Row } from 'antd';
-import { user } from '../utilities/constants';
-import { Link } from 'react-router-dom';
+import { default as Logo } from "../assets/svg/logo.svg";
+import { Button, Layout } from "antd";
+import { user } from "../utilities/constants";
+import { Link } from "react-router-dom";
 const { Header } = Layout;
 
 const NavBar = () => {
@@ -55,9 +55,9 @@ const UserMiniBtn = () => {
   return (
     <Link to="/profile" className="flex ml-5">
       <span
-            className="bg-no-repeat bg-center bg-primary-200 bg-cover rounded-full h-8 w-8 mr-2 border-px"
-            style={{ backgroundImage: `url(${user.picture})` }}
-          />
+        className="bg-no-repeat bg-center bg-primary-200 bg-cover rounded-full h-8 w-8 mr-2 border-px"
+        style={{ backgroundImage: `url(${user.picture})` }}
+      />
     </Link>
   );
 };
