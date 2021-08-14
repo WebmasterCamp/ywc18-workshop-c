@@ -1,4 +1,4 @@
-import { Card, Space, Typography, Divider } from 'antd';
+import { Row, Col, Space, Typography, Divider } from 'antd';
 const { Title, Text } = Typography;
 
 const bloodRequireData = [
@@ -28,31 +28,40 @@ const bloodRequireData = [
   },
 ];
 
+const style = { background: '#0092ff', padding: '8px 0' };
+
 const BloodRequire = () => {
   return (
-    <Space>
-      {bloodRequireData.map(bloodRequire => {
-        return (
-          <RequireCard bloodRequire={bloodRequire} key={bloodRequire.type} />
-        );
-      })}
-    </Space>
+    <div className="max-w-screen-xl m-auto bg-white rounded-xl shadow-xl p-5 ">
+      <Title level={2}>ปริมาณเลือดที่ขาดรายวัน</Title>
+      <Text>ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
+
+      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+        {bloodRequireData.map(bloodRequire => {
+          return (
+            <RequireCard bloodRequire={bloodRequire} key={bloodRequire.type} />
+          );
+        })}
+      </Row>
+    </div>
   );
-}
+};
 
 const RequireCard = props => {
   const { bloodRequire } = props;
-  const { type, requiredUnitPerMonth, aqquiredUnit, requiredUnit } =
-    bloodRequire;
+  const { type, requiredUnitPerMonth } = bloodRequire;
   return (
-    <Card>
-      <Title>{type}</Title>
-      <Text>ความต้องการโลหิต {requiredUnitPerMonth} ยูนิต/เดือน</Text>
-      <Divider />
-      <Text>โลหิตที่ได้รับ {aqquiredUnit} ยูนิต</Text>
-      <Divider />
-      <Text>ยังคงต้องการ {requiredUnit} ยูนิต</Text>
-    </Card>
+    <Col className="gutter-row" span={6}>
+      <Space>
+        <Title>{type}</Title>
+        <Space direction="vertical">
+          <Text>ความต้องการโลหิต</Text>
+          <Title level={4} style={{ margin: 0 }}>
+            {requiredUnitPerMonth} ยูนิต/เดือน
+          </Title>
+        </Space>
+      </Space>
+    </Col>
   );
 };
 
