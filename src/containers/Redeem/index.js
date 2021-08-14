@@ -52,7 +52,7 @@ const Reward = props => {
   return (
     <div className="rounded-2xl shadow-md h-auto bg-white mb-1">
       <div
-        className="rounded-t-2xl bg-center bg-cover bg-gray-200 bg-no-repeat h-40"
+        className="rounded-t-2xl bg-center bg-cover bg-gray-200 bg-no-repeat h-40 opacity-50"
         style={{
           backgroundImage: `url('/asset/reward-img/${img}')`,
         }}
