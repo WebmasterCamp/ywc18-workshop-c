@@ -5,7 +5,7 @@ const BloodMacro = () => {
   return (
     <div className="max-w-screen-xl m-auto mb-12">
       <div className="rounded-2xl shadow-md h-auto bg-white  p-8">
-        <p className="text-base font-semibold mb-6">หลอดพลังเลือด</p>
+        <p className="text-base font-semibold mb-6">เหรียญเกียรติยศ</p>
         <div className="flex ">
           <p className="text-4xl font-semibold text-primary-200 mb-2">2/</p>
           <p className="text-2xl font-semibold text-primary-200 mb-2 self-end">
