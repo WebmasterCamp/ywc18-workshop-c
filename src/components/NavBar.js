@@ -1,7 +1,7 @@
-import { default as Logo } from '../assets/svg/logo.svg';
-import { Button, Layout } from 'antd';
-import { user } from '../utilities/constants';
-import { Link } from 'react-router-dom';
+import { default as Logo } from "../assets/svg/logo.svg";
+import { Button, Layout } from "antd";
+import { user } from "../utilities/constants";
+import { Link } from "react-router-dom";
 const { Header } = Layout;
 
 const NavBar = () => {

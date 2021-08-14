@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Layout } from 'antd';
-import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
-import { rewardItems } from './rewardItems';
-import PointDonate from '../../assets/svg/point_donate.svg';
-import { user } from '../../utilities/constants';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Layout } from "antd";
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
+import { rewardItems } from "./rewardItems";
+import PointDonate from "../../assets/svg/point_donate.svg";
+import { user } from "../../utilities/constants";
 
 const RewardCatalog = () => {
   const { Content } = Layout;
@@ -16,15 +16,12 @@ const RewardCatalog = () => {
         <div className="max-w-screen-xl m-auto mb-12 p-5">
           <div className="flex items-center mb-12 flex-wrap">
             <h1 className="font-bold text-3xl mb-5">แลกของรางวัล</h1>
-            <div className="flex flex justify-center items-center ml-4 sm:ml-auto min-w-lg">
+            <div className="flex flex justify-center items-center ml-4 sm:ml-auto min-w-lg p-5 bg-white rounded-2xl">
               <img src={PointDonate} alt="PointDonate" width="54rem" />
               <div className="block ml-6">
                 <p className="text-sm whitespace-nowrap	">คะแนนของฉัน</p>
                 <p className="text-2xl font-semibold text-primary-200 whitespace-nowrap	">
                   {user.point} คะแนน
-                </p>
-                <p className="text-sm text-primary-200 cursor-pointer">
-                  แลกของรางวัล
                 </p>
               </div>
             </div>
@@ -41,7 +38,7 @@ const RewardCatalog = () => {
   );
 };
 
-const Reward = props => {
+const Reward = (props) => {
   const { rewardId, rewardName, description, point, img, available } =
     props.reward;
   if (available) {

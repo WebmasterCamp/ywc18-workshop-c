@@ -69,9 +69,7 @@ const Profile = () => {
                     {user.point} คะแนน
                   </p>
                   <Link to="/redeem">
-                    <p className="text-sm text-primary-200 cursor-pointer">
-                      แลกของรางวัล
-                    </p>
+                    <p className="text-sm">แลกของรางวัล</p>
                   </Link>
                 </div>
               </div>
