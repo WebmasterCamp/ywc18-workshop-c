@@ -39,23 +39,28 @@ const bloodRequireData = [
 
 const BloodRequire = () => {
   return (
-    <div className="max-w-screen-xl m-auto bg-white rounded-xl shadow-xl p-5 ">
-      <Row>
-        <Col span={8}>
-          <Title level={3}>ปริมาณเลือดที่ขาดรายวัน</Title>
-        </Col>
-        <Col span={8} offset={8}>
-          <Text className="float-right">ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
-        </Col>
-      </Row>
+    <div className="max-w-screen-xl m-auto mb-12">
+      <div className="rounded-2xl shadow-md h-auto bg-white  p-8">
+        <Row>
+          <Col span={8}>
+            <Title level={3}>ปริมาณเลือดที่ขาดรายวัน</Title>
+          </Col>
+          <Col span={8} offset={8}>
+            <Text className="float-right">ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
+          </Col>
+        </Row>
 
-      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-        {bloodRequireData.map((bloodRequire) => {
-          return (
-            <RequireCard bloodRequire={bloodRequire} key={bloodRequire.type} />
-          );
-        })}
-      </Row>
+        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+          {bloodRequireData.map((bloodRequire) => {
+            return (
+              <RequireCard
+                bloodRequire={bloodRequire}
+                key={bloodRequire.type}
+              />
+            );
+          })}
+        </Row>
+      </div>
     </div>
   );
 };
