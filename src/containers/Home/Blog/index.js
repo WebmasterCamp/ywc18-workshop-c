@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   return (
     <div className="max-w-screen-xl m-auto mb-12 ">
-      <p className="font-semibold text-xl">บทความ</p>
+      <p className="font-semibold text-xl mb-4">บทความ</p>
       <Row gutter={32}>
         <Col span={12}>
           <Link to="/blog/1">

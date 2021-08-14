@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import { user } from "../../utilities/constants";
 import NextDonate from "../../assets/svg/next_donate.svg";
 import PointDonate from "../../assets/svg/point_donate.svg";
+import { Link } from "react-router-dom";
 
 const columns = [
   {
@@ -67,9 +68,11 @@ const Profile = () => {
                   <p className="text-2xl font-semibold text-primary-200">
                     {user.point} คะแนน
                   </p>
-                  <p className="text-sm text-primary-200 cursor-pointer">
-                    แลกของรางวัล
-                  </p>
+                  <Link to="/redeem">
+                    <p className="text-sm text-primary-200 cursor-pointer">
+                      แลกของรางวัล
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
