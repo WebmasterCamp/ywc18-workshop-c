@@ -14,7 +14,7 @@ const BloodMacro = () => {
         </div>
 
         <p className="text-base mb-4">
-          บริจาคอีก 3 Unit จะไดรับเหรียญเกียรติยศ
+          บริจาคอีก 3 Unit จะได้รับเหรียญเกียรติยศ
         </p>
         <Progress percent={60} showInfo={false} />
       </div>
