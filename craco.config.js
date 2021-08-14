@@ -15,6 +15,7 @@ module.exports = {
             modifyVars: {
               "@layout-header-background": "#FFFFFF",
               "@layout-body-background": "#FAFAFA",
+              "@progress-default-color": "#F05D5D",
             },
             javascriptEnabled: true,
           },
