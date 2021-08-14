@@ -1,4 +1,4 @@
-import { Row, Col, Space, Typography, Flex } from 'antd';
+import { Row, Col, Space, Typography } from 'antd';
 import { default as BloodTypeA } from '../../../assets/svg/blood-type/BloodTypeA.svg';
 import { default as BloodTypeB } from '../../../assets/svg/blood-type/BloodTypeB.svg';
 import { default as BloodTypeO } from '../../../assets/svg/blood-type/BloodTypeO.svg';
@@ -39,7 +39,8 @@ const bloodRequireData = [
 
 const BloodRequire = () => {
   return (
-    <div className="max-w-screen-xl m-auto bg-white rounded-xl shadow-xl p-5 ">
+    <div className="max-w-screen-xl m-auto mb-12">
+      <div className="rounded-2xl shadow-md h-auto bg-white  p-8">
       <Row>
         <Col span={8}>
           <Title level={3}>ปริมาณเลือดที่ขาดรายวัน</Title>
@@ -56,6 +57,7 @@ const BloodRequire = () => {
           );
         })}
       </Row>
+    </div>
     </div>
   );
 };
