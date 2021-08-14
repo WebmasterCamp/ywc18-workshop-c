@@ -1,14 +1,25 @@
-import React from 'react';
-import { Button, Layout } from 'antd';
+import React, { useState } from 'react';
+
+import { Button, Layout, Modal } from 'antd';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
 const RewardDetail = () => {
   const { Content } = Layout;
+  const [isRedeemModalVisible, setRedeemModalVisible] = useState(false);
 
+  const showModal = () => {
+    setRedeemModalVisible(true);
+  };
+
+  const hideModal = () => {
+    setRedeemModalVisible(false);
+  };
+  
   return (
     <Layout>
       <NavBar />
+      
       <Content>
         <div className="max-w-screen-lg m-auto mt-4 mb-4 p-5">
           <img
@@ -49,9 +60,53 @@ const RewardDetail = () => {
             </li>
           </ul>
           <div className="flex justify-center	mt-8">
-          <Button type='primary' size='large' className='rounded-md'>แลกของรางวัล</Button>
+            <Button
+              type="primary"
+              size="large"
+              className="rounded-md"
+              onClick={showModal}
+            >
+              แลกของรางวัล
+            </Button>
           </div>
         </div>
+        <Modal
+          visible={isRedeemModalVisible}
+          closable={false}
+          cancelText="กลับสู่หน้าหลัก"
+          okText="กลับสู่หน้าแลกของรางวัล"
+          className="text-center"
+          footer={null}
+        >
+          <h2 className="font-bold text-2xl mt-10">
+            ส่วนลด mo-mo paradise มูลค่า 200 บาท
+          </h2>
+          <div className="flex justify-center">
+            <img
+              src="/asset/mock-reward-qr.png"
+              className="max-w-xs"
+              alt="reward"
+            />
+          </div>
+          <div className="flex flex-col justify-center	mt-4">
+            <Button
+              type="primary"
+              size="large"
+              className="w-full mb-2"
+              onClick={hideModal}
+            >
+              กลับสู่หน้าแลกของรางวัล
+            </Button>
+            <Button
+              size="large"
+              className="w-full"
+              onClick={hideModal}
+              color="default"
+            >
+              กลับสู่หน้าหลัก
+            </Button>
+          </div>
+        </Modal>
       </Content>
       <Footer />
     </Layout>
