@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Button, Layout } from 'antd';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
@@ -10,7 +10,7 @@ const RewardDetail = () => {
     <Layout>
       <NavBar />
       <Content>
-        <div className="max-w-screen-lg m-auto mt-4 p-5">
+        <div className="max-w-screen-lg m-auto mt-4 mb-4 p-5">
           <img
             src="/asset/reward-img/reward.png"
             className="w-full rounded-xl mb-10"
@@ -48,6 +48,9 @@ const RewardDetail = () => {
               และไม่สามารถใช้ร่วมกับรายการส่งเสริมการขายหรือส่วนลดอื่น ๆ ได้
             </li>
           </ul>
+          <div className="flex justify-center	mt-8">
+          <Button type='primary' size='large' className='rounded-md'>แลกของรางวัล</Button>
+          </div>
         </div>
       </Content>
       <Footer />
