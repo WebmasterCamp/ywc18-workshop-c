@@ -7,11 +7,13 @@ import Redeem from "./containers/Redeem";
 import Profile from "./containers/Profile";
 import TooFast20 from "./containers/Redeem/Reward/TooFast20";
 import Koi50 from "./containers/Redeem/Reward/Koi50";
+import About from "./containers/About";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route exact path="/about" component={About} />
         <Route exact path="/donate" component={DonateLocation} />
         <Route exact path="/blog/2" component={Blog2} />
         <Route exact path="/blog/1" component={Blog1} />
