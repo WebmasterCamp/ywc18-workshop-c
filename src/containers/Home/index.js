@@ -1,11 +1,15 @@
 import React from "react";
-import { Button } from "antd";
+import { Layout } from "antd";
 
 const Home = () => {
+  const { Header, Footer, Content } = Layout;
   return (
     <>
-      Home Page
-      <Button type="primary">Button</Button>
+      <Layout>
+        <Header>Header</Header>
+        <Content>Content</Content>
+        <Footer>Footer</Footer>
+      </Layout>
     </>
   );
 };
