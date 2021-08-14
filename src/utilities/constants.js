@@ -13,7 +13,7 @@ export const BloodType = {
 
 export const user = {
   username: "Kittipat Dechkul",
-  point: 100,
+  point: 90,
   history: [
     {
       id: 1,
