@@ -74,7 +74,7 @@ const RequireCard = props => {
         <img src={logo} alt="logo" />
         <Space direction="vertical" className="ml-5">
           <Text>ความต้องการโลหิต</Text>
-          <Title level={4}>{requiredUnit} ยูนิต</Title>
+          <span className="text-base text-lg font-semibold text-primary-200">{requiredUnit} ยูนิต</span>
         </Space>
       </Space>
     </Col>
