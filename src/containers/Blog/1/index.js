@@ -11,7 +11,7 @@ const Blog1 = () => {
     <Layout>
       <NavBar />
       <Content>
-        <div className="max-w-screen-lg m-auto mt-16">
+        <div className="max-w-screen-lg m-auto mt-16 p-5">
           <div
             className="bg-no-repeat bg-center bg-primary-200 bg-cover h-372px rounded-xl mb-16"
             style={{ backgroundImage: `url(${Banner})` }}
