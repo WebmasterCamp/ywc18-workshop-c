@@ -11,9 +11,11 @@ const EvaluationBanner = () => {
           <p className="font-normal mb-8 text-xl">
             ตรวจสอบคุณสมบัติเบื้องต้นก่อน ไปบริจาคเลือด
           </p>
-          <Button type="primary" size={"large"} style={{ width: "160px" }}>
-            ตรวจเลย
-          </Button>
+          <a href={"https://blooddonationthai.com/?page_id=734"}>
+            <Button type="primary" size={"large"} style={{ width: "160px" }}>
+              ตรวจเลย
+            </Button>
+          </a>
         </div>
         <div className="block">
           <img src={Image} alt="vector" />
