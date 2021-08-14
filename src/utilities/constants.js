@@ -14,4 +14,5 @@ export const user = {
   point: 10,
   history: [],
   bloodType: BloodType.A,
+  refferal: "YWC18C",
 };
