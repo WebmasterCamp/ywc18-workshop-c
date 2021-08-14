@@ -1,20 +1,19 @@
 import { default as Logo } from "../assets/svg/logo.svg";
-import { Button, Layout, Typography } from "antd";
+import { Button, Layout } from "antd";
 import { user } from "../utilities/constants";
-
+import { Link } from "react-router-dom";
 const { Header } = Layout;
-const { Link } = Typography;
 
 const NavBar = () => {
   return (
     <Header className="mb-12">
       <div className="max-w-screen-xl m-auto">
         <div className="flex justify-between">
-          <a href="/" className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img src={Logo} alt="logo" />
-          </a>
+          </Link>
           <div className="flex items-center">
-            <Link>เกี่ยวกับเรา</Link>
+            <Link to="/about">เกี่ยวกับเรา</Link>
             <UserBtn />
           </div>
         </div>
@@ -36,6 +35,7 @@ const UserBtn = () => {
           style={{ backgroundImage: `url(${user.picture})` }}
         />
       }
+      onClick={() => {}}
     >
       {user.username}
     </Button>

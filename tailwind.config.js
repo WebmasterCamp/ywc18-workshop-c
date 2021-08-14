@@ -30,7 +30,9 @@ module.exports = {
           100: "#7DF2C1",
         },
       },
-      width: {},
+      width: {
+        "545px": "545px",
+      },
       height: {
         "372px": "372px",
       },
