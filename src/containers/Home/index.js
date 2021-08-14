@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Layout>
         <NavBar />
-        <Content>
+        <Content className='p-5'>
           <RohitBanner />
           <BloodMacro />
           <BloodRequire />
