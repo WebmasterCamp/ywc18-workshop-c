@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 import { Button, Layout, Modal } from 'antd';
 import NavBar from '../../../components/NavBar';
 import Footer from '../../../components/Footer';
@@ -78,22 +78,26 @@ const Koi50 = () => {
             />
           </div>
           <div className="flex flex-col justify-center	mt-4">
-            <Button
-              type="primary"
-              size="large"
-              className="w-full mb-2"
-              onClick={hideModal}
-            >
-              กลับสู่หน้าแลกของรางวัล
-            </Button>
-            <Button
-              size="large"
-              className="w-full"
-              onClick={hideModal}
-              color="default"
-            >
-              กลับสู่หน้าหลัก
-            </Button>
+          <Link to="/redeem">
+              <Button
+                type="primary"
+                size="large"
+                className="w-full mb-2"
+                onClick={hideModal}
+              >
+                กลับสู่หน้าแลกของรางวัล
+              </Button>
+            </Link>
+            <Link to="/">
+              <Button
+                size="large"
+                className="w-full"
+                onClick={hideModal}
+                color="default"
+              >
+                กลับสู่หน้าหลัก
+              </Button>
+            </Link>
           </div>
         </Modal>
       </Content>
