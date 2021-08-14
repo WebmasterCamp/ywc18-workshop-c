@@ -3,6 +3,7 @@ import { Layout } from "antd";
 import BloodMacro from "./BloodMacro/BloodMacro";
 import BloodRequire from "./BloodRequire/BloodRequire";
 import BloodDonation from "./BloodDonation";
+import SearchLocation from "./SearchLocation/SearchLocation";
 
 const Home = () => {
   const { Header, Footer, Content } = Layout;
@@ -13,7 +14,7 @@ const Home = () => {
         <Content>
           <BloodMacro />
           <BloodRequire />
-          <BloodDonation />
+          <SearchLocation />
         </Content>
         <Footer>Footer</Footer>
       </Layout>

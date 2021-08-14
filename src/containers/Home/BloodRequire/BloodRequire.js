@@ -65,7 +65,7 @@ const BloodRequire = () => {
   );
 };
 
-const RequireCard = (props) => {
+const RequireCard = props => {
   const { bloodRequire } = props;
   const { requiredUnitPerMonth, logo } = bloodRequire;
   return (
