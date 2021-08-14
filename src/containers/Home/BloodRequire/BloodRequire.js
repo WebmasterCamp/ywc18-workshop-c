@@ -11,28 +11,28 @@ const bloodRequireData = [
     type: "A",
     requiredUnitPerMonth: 12200,
     aqquiredUnit: 2612,
-    requiredUnit: 9588,
+    requiredUnit: 12250,
     logo: BloodTypeA,
   },
   {
     type: "B",
     requiredUnitPerMonth: 18300,
     aqquiredUnit: 4433,
-    requiredUnit: 13867,
+    requiredUnit: 8250,
     logo: BloodTypeB,
   },
   {
     type: "O",
     requiredUnitPerMonth: 24400,
     aqquiredUnit: 5147,
-    requiredUnit: 19253,
+    requiredUnit: 10320,
     logo: BloodTypeO,
   },
   {
     type: "AB",
     requiredUnitPerMonth: 6100,
     aqquiredUnit: 1132,
-    requiredUnit: 4968,
+    requiredUnit: 6120,
     logo: BloodTypeAB,
   },
 ];
@@ -76,7 +76,7 @@ const RequireCard = (props) => {
     <Col className="gutter-row" span={6}>
       <Space>
         <img src={logo} alt="logo" />
-        <Space direction="vertical" className="ml-5">
+        <Space direction="vertical" className="ml-5 font-semibold">
           <Text>ความต้องการโลหิต</Text>
           <span className="text-base text-lg font-semibold text-primary-200">
             {requiredUnit} ยูนิต
