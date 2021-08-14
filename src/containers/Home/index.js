@@ -2,6 +2,7 @@ import React from "react";
 import { Layout } from "antd";
 import BloodMacro from "./BloodMacro/BloodMacro";
 import BloodRequire from "./BloodRequire/BloodRequire";
+import SearchLocation from "./SearchLocation/SearchLocation";
 
 const Home = () => {
   const { Header, Footer, Content } = Layout;
@@ -12,6 +13,7 @@ const Home = () => {
         <Content>
           <BloodMacro />
           <BloodRequire/>
+          <SearchLocation/>
         </Content>
         <Footer>Footer</Footer>
       </Layout>

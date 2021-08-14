@@ -13,6 +13,7 @@ module.exports = {
         lessLoaderOptions: {
           lessOptions: {
             modifyVars: {
+              "@primary-color": "#F05D5D",
               "@layout-header-background": "#FFFFFF",
               "@layout-body-background": "#FAFAFA",
               "@progress-default-color": "#F05D5D",
