@@ -1,35 +1,35 @@
-import { Row, Col, Space, Typography } from "antd";
-import { default as BloodTypeA } from "../../../assets/svg/blood-type/BloodTypeA.svg";
-import { default as BloodTypeB } from "../../../assets/svg/blood-type/BloodTypeB.svg";
-import { default as BloodTypeO } from "../../../assets/svg/blood-type/BloodTypeO.svg";
-import { default as BloodTypeAB } from "../../../assets/svg/blood-type/BloodTypeAB.svg";
+import { Row, Col, Typography } from 'antd';
+import { default as BloodTypeA } from '../../../assets/svg/blood-type/BloodTypeA.svg';
+import { default as BloodTypeB } from '../../../assets/svg/blood-type/BloodTypeB.svg';
+import { default as BloodTypeO } from '../../../assets/svg/blood-type/BloodTypeO.svg';
+import { default as BloodTypeAB } from '../../../assets/svg/blood-type/BloodTypeAB.svg';
 
 const { Text } = Typography;
 
 const bloodRequireData = [
   {
-    type: "A",
+    type: 'A',
     requiredUnitPerMonth: 12200,
     aqquiredUnit: 2612,
     requiredUnit: 9588,
     logo: BloodTypeA,
   },
   {
-    type: "B",
+    type: 'B',
     requiredUnitPerMonth: 18300,
     aqquiredUnit: 4433,
     requiredUnit: 13867,
     logo: BloodTypeB,
   },
   {
-    type: "O",
+    type: 'O',
     requiredUnitPerMonth: 24400,
     aqquiredUnit: 5147,
     requiredUnit: 19253,
     logo: BloodTypeO,
   },
   {
-    type: "AB",
+    type: 'AB',
     requiredUnitPerMonth: 6100,
     aqquiredUnit: 1132,
     requiredUnit: 4968,
@@ -54,8 +54,8 @@ const BloodRequire = () => {
           </Col>
         </Row>
 
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          {bloodRequireData.map((bloodRequire) => {
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {bloodRequireData.map(bloodRequire => {
             return (
               <RequireCard
                 bloodRequire={bloodRequire}
@@ -63,27 +63,25 @@ const BloodRequire = () => {
               />
             );
           })}
-        </Row>
+        </div>
       </div>
     </div>
   );
 };
 
-const RequireCard = (props) => {
+const RequireCard = props => {
   const { bloodRequire } = props;
   const { requiredUnit, logo } = bloodRequire;
   return (
-    <Col className="gutter-row" span={6}>
-      <Space>
-        <img src={logo} alt="logo" />
-        <Space direction="vertical" className="ml-5">
-          <Text>ความต้องการโลหิต</Text>
-          <span className="text-base text-lg font-semibold text-primary-200">
-            {requiredUnit} ยูนิต
-          </span>
-        </Space>
-      </Space>
-    </Col>
+    <div className="flex item-center">
+      <img src={logo} alt="logo" />
+      <div className="flex flex-col ml-5 mt-5">
+        <Text>ความต้องการโลหิต</Text>
+        <span className="text-base text-lg font-semibold text-primary-200">
+          {requiredUnit} ยูนิต
+        </span>
+      </div>
+    </div>
   );
 };
 
