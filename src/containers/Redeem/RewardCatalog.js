@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link, useRouteMatch } from 'react-router-dom';
-import { Layout } from 'antd';
-import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
-import {rewardItems } from './rewardItems'
+import React from "react";
+import { Link } from "react-router-dom";
+import { Layout } from "antd";
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
+import { rewardItems } from "./rewardItems";
 
 const RewardCatalog = () => {
   const { Content } = Layout;
@@ -14,7 +14,7 @@ const RewardCatalog = () => {
         <div className="max-w-screen-xl m-auto mb-12 p-5">
           <h1 className="font-bold text-3xl mb-12">แลกของรางวัล</h1>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {rewardItems.map(reward => {
+            {rewardItems.map((reward) => {
               return <Reward reward={reward} key={reward.rewardId} />;
             })}
           </div>
@@ -25,7 +25,7 @@ const RewardCatalog = () => {
   );
 };
 
-const Reward = props => {
+const Reward = (props) => {
   const { rewardId, rewardName, description, point, img, available } =
     props.reward;
   if (available) {
@@ -40,7 +40,9 @@ const Reward = props => {
           ></div>
           <div className="p-6">
             <h6 className="font-bold text-lg">{rewardName}</h6>
-            <p className="text-secondary-200 hover:text-secondary-200">{description}</p>
+            <p className="text-secondary-200 hover:text-secondary-200">
+              {description}
+            </p>
             <span className="text-primary-200">{point} คะแนน</span>
           </div>
         </div>
