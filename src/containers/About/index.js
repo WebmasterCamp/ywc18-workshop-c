@@ -2,7 +2,6 @@ import React from "react";
 import { Layout } from "antd";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-import Banner from "../../assets/blogbanner_1.png";
 
 const About = () => {
   const { Content } = Layout;
