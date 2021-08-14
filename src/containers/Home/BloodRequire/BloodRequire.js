@@ -63,12 +63,12 @@ const BloodRequire = () => {
 };
 
 const RequireCard = props => {
-  const { bloodRequire } = props;
+  const { type, bloodRequire } = props;
   const { requiredUnitPerMonth, logo } = bloodRequire;
   return (
     <Col className="gutter-row" span={6}>
       <Space>
-        <img src={logo} />
+        <img src={logo} alt={type}/>
         <Space direction="vertical" className="ml-5">
           <Text>ความต้องการโลหิต</Text>
           <Title level={4}>{requiredUnitPerMonth} ยูนิต/เดือน</Title>
