@@ -1,6 +1,5 @@
 import { default as Logo } from '../assets/svg/logo.svg';
 import { UserOutlined } from '@ant-design/icons';
-import { default as UserProfile } from '../assets/svg/userprofile.svg';
 import { Button, Layout, Typography } from 'antd';
 const { Header } = Layout;
 const {Link} = Typography;
