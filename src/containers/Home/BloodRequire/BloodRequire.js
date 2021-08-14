@@ -1,34 +1,32 @@
-import { Row, Col, Space, Typography, Divider } from 'antd';
+import { Row, Col, Space, Typography } from "antd";
 const { Title, Text } = Typography;
 
 const bloodRequireData = [
   {
-    type: 'A',
+    type: "A",
     requiredUnitPerMonth: 12200,
     aqquiredUnit: 2612,
     requiredUnit: 9588,
   },
   {
-    type: 'B',
+    type: "B",
     requiredUnitPerMonth: 18300,
     aqquiredUnit: 4433,
     requiredUnit: 13867,
   },
   {
-    type: 'O',
+    type: "O",
     requiredUnitPerMonth: 24400,
     aqquiredUnit: 5147,
     requiredUnit: 19253,
   },
   {
-    type: 'AB',
+    type: "AB",
     requiredUnitPerMonth: 6100,
     aqquiredUnit: 1132,
     requiredUnit: 4968,
   },
 ];
-
-const style = { background: '#0092ff', padding: '8px 0' };
 
 const BloodRequire = () => {
   return (
@@ -37,7 +35,7 @@ const BloodRequire = () => {
       <Text>ข้อมูล ณ วันที่ 15 สิงหาคม 2564</Text>
 
       <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-        {bloodRequireData.map(bloodRequire => {
+        {bloodRequireData.map((bloodRequire) => {
           return (
             <RequireCard bloodRequire={bloodRequire} key={bloodRequire.type} />
           );
@@ -47,7 +45,7 @@ const BloodRequire = () => {
   );
 };
 
-const RequireCard = props => {
+const RequireCard = (props) => {
   const { bloodRequire } = props;
   const { type, requiredUnitPerMonth } = bloodRequire;
   return (
