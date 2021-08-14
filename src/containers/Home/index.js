@@ -2,8 +2,8 @@ import React from "react";
 import { Layout } from "antd";
 import BloodMacro from "./BloodMacro/BloodMacro";
 import BloodRequire from "./BloodRequire/BloodRequire";
-import SearchLocation from "./SearchLocation/SearchLocation";
 import NavBar from "../../components/NavBar";
+import BloodDonation from "./BloodDonation";
 
 const Home = () => {
   const { Header, Footer, Content } = Layout;
@@ -13,8 +13,8 @@ const Home = () => {
         <NavBar/>
         <Content>
           <BloodMacro />
-          <BloodRequire/>
-          <SearchLocation/>
+          <BloodRequire />
+          <BloodDonation />
         </Content>
         <Footer>Footer</Footer>
       </Layout>

@@ -17,6 +17,7 @@ module.exports = {
               "@layout-header-background": "#FFFFFF",
               "@layout-body-background": "#FAFAFA",
               "@progress-default-color": "#F05D5D",
+              "@primary-color": "#F05D5D",
             },
             javascriptEnabled: true,
           },
