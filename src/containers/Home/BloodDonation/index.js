@@ -1,5 +1,5 @@
 import React from "react";
-import { Input, Select, Button } from "antd";
+import { Select, Button } from "antd";
 import { district } from "../../../utilities/district";
 
 const BloodDonation = () => {

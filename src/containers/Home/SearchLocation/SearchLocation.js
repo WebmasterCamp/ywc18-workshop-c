@@ -1,4 +1,4 @@
-import { Button, Typography, Input, Select } from 'antd';
+import { Button, Typography, Input, Select } from "antd";
 const { Title } = Typography;
 const { Option } = Select;
 
@@ -10,14 +10,16 @@ const SearchLocation = () => {
         <Input.Group compact>
           <Select
             size="large"
-            style={{ width: 'calc(100% - 100px)' }}
+            style={{ width: "calc(100% - 100px)" }}
             defaultValue="select"
           >
-              <Option value="select" disabled>เลือกเขตที่ต้องการค้นหา</Option>
+            <Option value="select" disabled>
+              เลือกเขตที่ต้องการค้นหา
+            </Option>
             <Option value="Ladkrabang">ลาดกระบัง</Option>
             <Option value="Ladprao">ลาดพร้าว</Option>
           </Select>
-          <Button clas size="large" style={{ width: '100px' }}>
+          <Button size="large" style={{ width: "100px" }}>
             ค้นหา
           </Button>
         </Input.Group>
