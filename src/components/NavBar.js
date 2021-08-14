@@ -10,7 +10,9 @@ const NavBar = () => {
     <Header className="mb-12">
       <div className="max-w-screen-xl m-auto">
         <div className="flex justify-between">
-          <img src={Logo} alt="logo" />
+          <a href="/" className="flex items-center">
+            <img src={Logo} alt="logo" />
+          </a>
           <div className="flex items-center">
             <Link>เกี่ยวกับเรา</Link>
             <UserBtn />

@@ -47,10 +47,10 @@ const Profile = () => {
                 <div className="block ml-8">
                   <p className="text-sm">การบริจาคครั้งถัดไป</p>
                   <p className="text-2xl font-semibold text-primary-200">
-                    89 วัน
+                    83 วัน
                   </p>
                   <Progress
-                    percent={60}
+                    percent={3}
                     showInfo={false}
                     style={{ width: "240px" }}
                   />
